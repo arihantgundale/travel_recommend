@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 import time
 import requests
 
-# Static fallback trends
+
 TRENDING_PLACES = {
     "Asia": [
         {"name": "Osaka, Japan", "popularity": 25000, "skyscanner_code": "OSAA", "hotel_market": "Osaka, JP"},
