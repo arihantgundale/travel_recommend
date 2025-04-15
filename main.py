@@ -64,7 +64,7 @@ def fetch_trending_places(region):
     url = "https://serpapi.com/search"
     params = {
         "q": f"trending travel destinations 2025 {region}",
-        "api_key": "9ba8da08c27f6ad7df985ccf6be82f7bd0a0e4e8eee9d219b783dbcf31603721",  # Replace with your SerpAPI key
+        "api_key": "SerpAPI key",
         "engine": "google",
         "num": 10
     }
@@ -88,7 +88,7 @@ def fetch_flight_price(origin, destination, origin_code, dest_code):
     conn = http.client.HTTPSConnection("skyscanner89.p.rapidapi.com")
     headers = {
         'x-rapidapi-host': "skyscanner89.p.rapidapi.com",
-        'x-rapidapi-key': "bec39736femsh66436f98436a376p1d47d0jsn3f32eceef854"
+        'x-rapidapi-key': "key"
     }
     endpoint = f"/flights/one-way/list?origin={origin_code}&originId=27537542&destination={dest_code}&destinationId=95673827"
     try:
@@ -108,7 +108,7 @@ def fetch_hotel_price(destination, nights=5):
     """Fetch hotel price using Skyscanner API."""
     conn = http.client.HTTPSConnection("skyscanner89.p.rapidapi.com")
     headers = {
-        'x-rapidapi-key': "bec39736femsh66436f98436a376p1d47d0jsn3f32eceef854",
+        'x-rapidapi-key': "key",
         'x-rapidapi-host': "skyscanner89.p.rapidapi.com"
     }
     checkin = (datetime.now() + timedelta(days=30)).strftime("%Y-%m-%d")
